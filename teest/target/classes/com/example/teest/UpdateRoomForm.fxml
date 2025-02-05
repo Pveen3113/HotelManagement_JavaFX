@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.teest.UpdateRoomFormController"
+      spacing="20" alignment="CENTER"
+      style="-fx-background-color: #2c3e50; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0, 0, 5);">
+
+    <!-- Title Label -->
+    <Label text="Update Room Details"
+           style="-fx-font-size: 20px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+    <!-- Input Fields -->
+    <VBox spacing="15"
+          style="-fx-background-color: #34495e; -fx-padding: 30; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 0, 10);">
+
+        <!-- Room Type -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Room Type"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="roomTypeField" promptText="Room Type"
+                       style="-fx-font-size: 14px; -fx-pref-width: 300; -fx-background-radius: 5;"/>
+        </VBox>
+
+        <!-- Room Price -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Room Price"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="priceField" promptText="Rm"
+                       style="-fx-font-size: 14px; -fx-pref-width: 300; -fx-background-radius: 5;"/>
+        </VBox>
+
+        <!-- Number of Units -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Number of Units Available"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="unitsField" promptText="units"
+                       style="-fx-font-size: 14px; -fx-pref-width: 300; -fx-background-radius: 5;"/>
+        </VBox>
+
+        <!-- Buttons -->
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="Save" onAction="#saveUpdatedGuest"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150; -fx-pref-height: 40; -fx-background-radius: 5; -fx-cursor: hand;" />
+            <Button text="Cancel" onAction="#cancelUpdate"
+                    style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150; -fx-pref-height: 40; -fx-background-radius: 5; -fx-cursor: hand;" />
+        </VBox>
+    </VBox>
+
+</VBox>

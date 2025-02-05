@@ -1,0 +1,3 @@
+Deluxe,100,4
+Suite,1000,1
+Triple ,200,10

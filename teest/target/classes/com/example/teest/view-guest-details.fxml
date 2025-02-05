@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.teest.ViewGuestDetailsController"
+      spacing="20"
+      alignment="CENTER"
+      style="-fx-background-color: #EFE9D5; -fx-border-color: #ccc; -fx-border-width: 1; -fx-border-radius: 10; -fx-background-radius: 10;">
+
+    <Label text="Guest Details"
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2a2a2a;" />
+
+    <Label fx:id="guestDetailsLabel"
+           wrapText="true"
+           style="-fx-font-size: 14px; -fx-text-fill: #333; -fx-padding: 10;" />
+
+    <Button text="Close"
+            onAction="#closeDetails"
+            style="-fx-font-size: 14px; -fx-background-color: #497D74; -fx-text-fill: white; -fx-background-radius: 5;"
+            prefWidth="100" />
+
+    <VBox.margin>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </VBox.margin>
+</VBox>

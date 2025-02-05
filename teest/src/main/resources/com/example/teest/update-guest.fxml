@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.teest.UpdateGuestController"
+      spacing="20" alignment="CENTER"
+      style="-fx-background-color: #2c3e50; -fx-padding: 30;-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0, 0, 5);">
+
+    <!-- Title Label -->
+    <Label text="Update Guest Details"
+           style="-fx-font-size: 20px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+    <!-- Input Fields -->
+    <VBox spacing="15" alignment="CENTER" style="-fx-background-color: #2c3e50; -fx-padding: 20; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 0, 10);">
+
+        <!-- Name Field -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Name"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="nameField" promptText="Enter Guest Name"
+                       style="-fx-font-size: 14px; -fx-pref-width: 250; -fx-background-radius: 5; -fx-background-color: #ecf0f1;"/>
+        </VBox>
+
+        <!-- ID Field -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="ID"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="idField" promptText="Enter Guest ID"
+                       style="-fx-font-size: 14px; -fx-pref-width: 250; -fx-background-radius: 5; -fx-background-color: #ecf0f1;"/>
+        </VBox>
+
+        <!-- Contact Field -->
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Contact"
+                   style="-fx-font-size: 16px; -fx-text-fill: #ecf0f1;"/>
+            <TextField fx:id="contactField" promptText="Enter Contact Number"
+                       style="-fx-font-size: 14px; -fx-pref-width: 250; -fx-background-radius: 5; -fx-background-color: #ecf0f1;"/>
+        </VBox>
+
+        <!-- Buttons -->
+        <HBox spacing="20" alignment="CENTER">
+            <!-- Save Button -->
+            <Button text="Save" onAction="#saveUpdatedGuest"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 100; -fx-pref-height: 40; -fx-background-radius: 5; -fx-cursor: hand;"/>
+
+            <!-- Cancel Button -->
+            <Button text="Cancel" onAction="#cancelUpdate"
+                    style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 100; -fx-pref-height: 40; -fx-background-radius: 5; -fx-cursor: hand;"/>
+        </HBox>
+    </VBox>
+</VBox>
